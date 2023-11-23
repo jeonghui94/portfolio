@@ -1507,6 +1507,48 @@ fieldset {
     padding-top: 30px;
 }
 
+ /* 버튼 */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+.project_btn_box .default {
+    text-decoration-line: none;
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.project_btn_box .outBox {
+    inset: 0px;
+    position: absolute;
+    height: 35px;
+
+    transition-duration: 0.3s;
+    transform: translate(-0.5rem, -0.5rem) scaleX(1) scaleY(1);
+    background-color: rgb(252 165 165);
+}
+.project_btn_box .inBox {
+    inset: 0px;
+    position: absolute;
+    border-width: 2px;
+    height: 35px;
+    border-color: #000000;
+}
+
+.project_btn_box a {
+    margin-right: 10px;
+}
+
+.default :hover .outBox {
+    transform: scaleX(1) scaleY(1);
+}
+
+/* 버튼 */
+
 .project_btn {
     display: inline-block;
     padding: 5px 20px;
