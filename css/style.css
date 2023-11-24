@@ -418,6 +418,22 @@ a.repeat:hover {
     animation-delay: .95s;
 }
 
+#resume h4 {
+    text-align: left;
+}
+
+#resume ul li {
+    line-height: 2;
+    text-align: justify;
+}
+#resume ul {
+    padding: 0;
+}
+
+#resume ul li span {
+    color: #858c91;
+}
+
 /* ----------------------------------------------------------------------------------- */
 
 html,
@@ -525,7 +541,6 @@ a {
 }
 
 a:hover {
-    color: #3ec1d5;
     text-decoration: none;
 }
 
@@ -639,13 +654,11 @@ body {
 }
 
 .back-to-top:focus {
-    background: #3ec1d5;
     color: #fff;
     outline: none;
 }
 
 .back-to-top:hover {
-    background: #3cd6ed;
     color: #fff;
 }
 
@@ -979,11 +992,10 @@ div#preloader {
     transition: all 0.5s ease 0s;
 }
 
-.services-details:hover h4,
+/* .services-details:hover h4,
 .services-details:hover .services-icon {
-    color: #3ec1d5;
-    /*hover색*/
-}
+    color: #6173bd;
+} */
 
 .row.second-row {
     margin-top: 40px;
@@ -1613,6 +1625,8 @@ div#preloader {
     position: absolute;
     transition: all 0.4s ease 0s;
     width: 100%;
+    cursor: pointer;
+
 }
 
 .project-dec {
@@ -1625,10 +1639,7 @@ div#preloader {
     display: block;
     height: 100%;
     width: 100%;
-}
 
-.project-dec h4 {
-    margin-bottom: 5px;
 }
 
 .project-dec h4:hover {
@@ -1636,13 +1647,14 @@ div#preloader {
 }
 
 .project-dec h4 {
-    color: #ddd;
+    color: rgb(223, 255, 251);
     font-size: 24px;
-    margin-top: -45px;
-    padding-top: 50%;
+    padding-top: 15%;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 800;
+    cursor: pointer;
+    margin-bottom: 5px;
+
 }
 
 .project-dec span {
