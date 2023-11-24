@@ -300,8 +300,15 @@
 
 #about .sec-head {
     font-family: "NanumSquareNeoBold";
-    font-size: 18px;
-    padding-top: 20px;
+    font-size: 26px;
+    padding-top: 40px;
+    padding-bottom: 14px;
+    line-height: 38px;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 26px;
 }
 
 #about .text_wrap {
