@@ -207,14 +207,50 @@
     animation: scale 2s ease infinite;
 }
 
-#home h2 {
+#home .three {
     font-family: "Blenny Trial";
     color: #355bf3;
     margin-top: 2rem;
-    line-height: 1.1;
+    line-height: 0.5;
     text-shadow: 0px 3px 4px #004cff72;
     font-size: 10rem;
 }
+
+.three p {
+    margin-top: 50px;
+    font-size: 8rem;
+}
+
+.three span {
+    color: #355bf3;
+    opacity: 0;
+    transform: translate(-300px, 0) scale(0);
+    animation: sideSlide .5s forwards;
+}
+
+@keyframes sideSlide {
+    60% {
+        transform: translate(20px, 0) scale(1);
+        color: #355bf3;
+    }
+
+    80% {
+        transform: translate(20px, 0) scale(1);
+        color: #355bf3;
+    }
+
+    99% {
+        transform: translate(0) scale(1.2);
+        color: rgb(0, 217, 255);
+    }
+
+    100% {
+        transform: translate(0) scale(1);
+        opacity: 1;
+        color: #355bf3;
+    }
+}
+
 
 #about .well-left {
     width: 500px;
@@ -299,6 +335,87 @@
 
 #skill {
     background-color: #f9fcff;
+}
+
+a.repeat:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.animate span:nth-of-type(2) {
+    animation-delay: .05s;
+}
+
+.animate span:nth-of-type(3) {
+    animation-delay: .1s;
+}
+
+.animate span:nth-of-type(4) {
+    animation-delay: .15s;
+}
+
+.animate span:nth-of-type(5) {
+    animation-delay: .2s;
+}
+
+.animate span:nth-of-type(6) {
+    animation-delay: .25s;
+}
+
+.animate span:nth-of-type(7) {
+    animation-delay: .3s;
+}
+
+.animate span:nth-of-type(8) {
+    animation-delay: .35s;
+}
+
+.animate span:nth-of-type(9) {
+    animation-delay: .4s;
+}
+
+.animate span:nth-of-type(10) {
+    animation-delay: .45s;
+}
+
+.animate span:nth-of-type(11) {
+    animation-delay: .5s;
+}
+
+.animate span:nth-of-type(12) {
+    animation-delay: .55s;
+}
+
+.animate span:nth-of-type(13) {
+    animation-delay: .6s;
+}
+
+.animate span:nth-of-type(14) {
+    animation-delay: .65s;
+}
+
+.animate span:nth-of-type(15) {
+    animation-delay: .7s;
+}
+
+.animate span:nth-of-type(16) {
+    animation-delay: .75s;
+}
+
+.animate span:nth-of-type(17) {
+    animation-delay: .8s;
+}
+
+.animate span:nth-of-type(18) {
+    animation-delay: .85s;
+}
+
+.animate span:nth-of-type(19) {
+    animation-delay: .9s;
+}
+
+.animate span:nth-of-type(20) {
+    animation-delay: .95s;
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -444,11 +561,11 @@ body {
         bottom: 15px;
     }
 
-    #home h2 {
+    #home .three {
         font-size: 13vw;
     }
 
-    #home h2 span {
+    #home .three p {
         font-size: 10.4vw;
     }
 
