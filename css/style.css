@@ -1,9 +1,7 @@
 @font-face {
     font-family: "Yellow Rabbit";
     src: url("../fonts/YellowRabbit-PersonalUse.eot");
-    src: url("../fonts/YellowRabbit-PersonalUse.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/YellowRabbit-PersonalUse.woff") format("woff"),
+    src: url("../fonts/YellowRabbit-PersonalUse.woff") format("woff"),
         url("../fonts/YellowRabbit-PersonalUse.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -13,9 +11,7 @@
 @font-face {
     font-family: "Blenny Trial";
     src: url("../fonts/BlennyTrial-Black.eot");
-    src: url("../fonts/BlennyTrial-Black.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/BlennyTrial-Black.woff") format("woff"),
+    src: url("../fonts/BlennyTrial-Black.woff") format("woff"),
         url("../fonts/BlennyTrial-Black.ttf") format("truetype");
     font-weight: 900;
     font-style: normal;
@@ -25,9 +21,7 @@
 @font-face {
     font-family: "Limelight";
     src: url("../fonts/Limelight-Regular.eot");
-    src: url("../fonts/Limelight-Regular.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/Limelight-Regular.woff") format("woff"),
+    src: url("../fonts/Limelight-Regular.woff") format("woff"),
         url("../fonts/Limelight-Regular.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
@@ -303,16 +297,59 @@
 }
 
 #about .sec-head {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #3c57c2;
+    line-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+}
+
+:root {
+    --color-text: #fff;
+    --color-front: hsl(212, 89%, 52%);
+    --color-back: hsl(212, 91%, 73%);
+}
+
+.about_tag {
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    clip-path: polygon(20px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 20px);
+    background: var(--color-front);
+    padding: 6px 30px;
+    margin: 0 8px;
     font-family: "NanumSquareNeoBold";
-    font-size: 26px;
-    padding-top: 40px;
-    padding-bottom: 14px;
-    line-height: 38px;
+    font-size: 18px;
+    color: var(--color-text);
+    transition: clip-path 500ms;
+}
+
+.about_tag:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: var(--color-back);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 6px 0;
+    transition: transform 500ms;
+}
+
+.about_tag:hover {
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 0px);
+}
+
+.about_tag:hover:after {
+    transform: translate(-100%, -100%);
 }
 
 #about p {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 28px;
 }
 
 #about .text_wrap {
@@ -1039,6 +1076,7 @@ div#preloader {
 .progress-h4 {
     font-family: "NanumSquareNeoExtraBold";
     font-size: 24px;
+    margin: 0;
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -2826,7 +2864,6 @@ span.email-notes {
     cursor: pointer;
     color: #075ba5;
     font-family: "NanumSquareNeo";
-    border-radius: 5px;
 }
 
 .brand_link a {
@@ -2834,6 +2871,13 @@ span.email-notes {
     padding: 6px 20px;
     margin: 0 10px 0 5px;
     text-decoration: none;
+}
+
+.brand_link:hover .outBox {
+    background-color: #075ba5;
+}
+.brand_link:hover span {
+    color: #fff;
 }
 
 *,
@@ -2854,7 +2898,7 @@ span.email-notes {
     position: absolute;
     transition-duration: 0.3s;
     transform: translate(-0.5rem, -0.5rem) scaleX(1) scaleY(1);
-    background-color: #fff3ac;
+    background-color: #fff9d9;
 }
 
 .inBox {
