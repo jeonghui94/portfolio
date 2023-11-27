@@ -470,6 +470,11 @@ a.repeat:hover {
     text-align: left;
 }
 
+.resume_title {
+    background: url(../img/resume/resume_icon.svg) left center no-repeat;
+    padding-left: 30px;
+}
+
 #resume ul li {
     line-height: 2;
     text-align: justify;
@@ -481,7 +486,14 @@ a.repeat:hover {
 #resume ul li span {
     color: #858c91;
 }
-
+/* 테이블 */
+table td {
+    padding-right: 12px;
+    padding-bottom: 8px;
+}
+.first_col {
+    color: #fe8215;
+}
 /* ----------------------------------------------------------------------------------- */
 
 html,
