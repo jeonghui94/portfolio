@@ -623,7 +623,7 @@ body {
 
 @media (max-width: 1200px) {
     .container {
-        margin: 0;
+        margin: 0 auto;
     }
 
     #about .img_wrap {
@@ -677,6 +677,10 @@ body {
 
     #home .container h1 > ul li:nth-child(1) {
         width: 24vw;
+    }
+
+    #about .well-left {
+        margin: 0 auto;
     }
 
     #about .well-left ul li:nth-child(1) {
